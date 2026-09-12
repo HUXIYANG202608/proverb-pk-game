@@ -1,0 +1,1168 @@
+<!doctype html>
+<html lang="zh-CN" data-page-node-id="BDx8OPL49MmIx0TZwxJQPU">
+ <head data-page-node-id="DrqmRv6oTteNzC1ITVYOao">
+  <meta charset="UTF-8" data-page-node-id="P8OGq4ewMct85CEM6muiwD">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="1JSSC7SNOLeWDGBfDoc5OC">
+  <title>高考英语谚语两人PK互动课件（图片版·112条）</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+* { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif; box-sizing: border-box; }
+@keyframes shakeAnim { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }
+@keyframes bounceIn { 0%{transform:scale(0.9);opacity:0.5} 50%{transform:scale(1.05)} 100%{transform:scale(1);opacity:1} }
+@keyframes floatUp { 0%{opacity:1;transform:translateY(0)} 100%{opacity:0;transform:translateY(-40px)} }
+@keyframes pulseGlow { 0%,100%{box-shadow:0 0 0 0 rgba(242,184,75,0.4)} 50%{box-shadow:0 0 0 12px rgba(242,184,75,0)} }
+.shake-it { animation: shakeAnim 0.3s ease-in-out; }
+.bounce-it { animation: bounceIn 0.35s ease-out; }
+.float-combo { animation: floatUp 1.2s ease-out forwards; }
+.pulse-glow { animation: pulseGlow 1.5s infinite; }
+.opt-btn { transition: all 0.15s ease; }
+.opt-btn:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 4px 8px rgba(0,0,0,0.12); }
+.opt-btn:disabled { cursor: not-allowed; opacity: 0.7; }
+</style>
+ </head>
+ <body class="bg-[#F7F7F5] min-h-screen flex flex-col overflow-hidden" data-page-node-id="JaE7Es0E4CaOcuJhabJZlW">
+  <div id="screen-start" class="fixed inset-0 z-50 bg-[#1F3A5F] flex items-center justify-center" data-page-node-id="0Ca9Zu0gNp3egvFbARli23">
+   <div class="text-center px-6 max-w-lg" data-page-node-id="0MFgInPormpjaH7HdZSHDC">
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4" data-page-node-id="qeIFMM9HeLAGN7AEr6GEkv">高考英语谚语 PK</h1>
+    <p class="text-xl text-[#F2B84B] mb-2" data-page-node-id="KCoIIjpK0AosvfUz2e1qLz">双人互动对战课件 · 图片版</p>
+    <p class="text-gray-300 mb-8 text-sm leading-relaxed" data-page-node-id="ChmuE7KjvFmmwcylwVoUOl">掌握112条高考高频英语谚语与俚语（全国卷高频通用 + 分类谚语 + 易错俚语），通过配对、应用、抢答、车轮战四关挑战，与对手一决高下！</p><button onclick="startGame()" class="bg-[#F2B84B] hover:bg-yellow-500 text-[#1F3A5F] font-bold text-xl px-12 py-4 rounded shadow-lg transition-all hover:scale-105 active:scale-95" data-page-node-id="GyxVIG7fOLHK2HyBx1odfM">开始对战</button>
+   </div>
+  </div>
+  <div id="game-container" class="flex flex-col h-screen hidden" data-page-node-id="60DN31STyqywYxhMyG3Iy9">
+   <header class="h-[60px] bg-[#1F3A5F] flex items-center justify-between px-3 md:px-6 text-white shrink-0 z-20" data-page-node-id="9etTNSotFlhDeBeQXFOLTH">
+    <div class="flex items-center gap-2 min-w-[120px]" data-page-node-id="EXEQwllcTrEicdFdoG6lIl">
+     <button onclick="backToStart()" class="bg-white/10 hover:bg-white/20 px-2 py-1 rounded text-xs transition-colors" title="返回首页" data-page-node-id="xm95AFp1i6XXhiKIi6uXAq">⌂ 返回</button> <span id="level-name" class="font-bold text-sm md:text-base truncate" data-page-node-id="FxYDP8xhFNHLpg9ndaChap"></span> <span id="level-progress" class="text-xs text-gray-300 hidden md:inline" data-page-node-id="9bLPi1uGQbvlZoPgHTlTFE"></span>
+    </div>
+    <div class="flex items-center gap-2 md:gap-4 flex-1 justify-center max-w-md mx-2" data-page-node-id="z5uIFMIKCHRzyv1ZkzR8WZ">
+     <div class="flex items-center gap-1.5" data-page-node-id="R3fcvvFzn8hTn0LOaf2OQO">
+      <span id="p1-indicator" class="w-3 h-3 rounded-full bg-[#F2B84B] transition-all" data-page-node-id="NC37n9tL1CXjXcmzLmUlxj"></span> <span class="text-xs md:text-sm font-medium" data-page-node-id="iNYfU3XJatpmWAEsExaGlg">P1</span> <span id="p1-score-header" class="font-bold text-[#F2B84B] text-sm md:text-base" data-page-node-id="iNzZFq9pb48nH8QeCnuUqV">0</span>
+     </div><span class="text-gray-400 text-xs" data-page-node-id="FFMp6P4axQ34bUeWzfw0ZY">VS</span>
+     <div class="flex items-center gap-1.5" data-page-node-id="96CcouYsBLGgrQfDFI7Vk2">
+      <span id="p2-score-header" class="font-bold text-blue-300 text-sm md:text-base" data-page-node-id="HkGC4ih17YsxiHFAnf64TG">0</span> <span class="text-xs md:text-sm font-medium" data-page-node-id="wCKrE6BR3ZmuPi8jWG56xf">P2</span> <span id="p2-indicator" class="w-3 h-3 rounded-full bg-blue-300 transition-all" data-page-node-id="YK2EYrBD6TenjuYG8BZ4cU"></span>
+     </div>
+    </div>
+    <div class="flex items-center gap-2 md:gap-3 min-w-[120px] justify-end" data-page-node-id="hxI2x9MglUiIQoMEvSrtKl">
+     <div id="timer-box" class="hidden items-center gap-1 bg-white/10 px-2 py-1 rounded" data-page-node-id="8wfMGI6ujP56YUTlrCfDHx">
+      <svg class="w-4 h-4" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-page-node-id="7xxDcUbFswWmhNhFgnJgYa"><circle cx="12" cy="12" r="10" data-page-node-id="KB26hH5GShyEFTOPf3h2Jd" /><polyline points="12 6 12 12 16 14" data-page-node-id="BFLCf5Mrtj2nWjQQ0WuDl0" />
+      </svg><span id="timer-display" class="font-mono font-bold text-sm" data-page-node-id="6eregmAH5HSQqTSeGW8fLC">0</span>
+     </div><button onclick="toggleSound()" id="sound-btn" class="text-lg p-1 hover:bg-white/10 rounded transition-colors" title="音效开关" data-page-node-id="RqmUA7FJKAarG5e03tIzm3">🔊</button> <button onclick="restartGame()" class="text-xs bg-white/10 hover:bg-white/20 px-2 py-1 rounded transition-colors" title="重新开始" data-page-node-id="mBnW81JzOSTHiLmAGwxf57">↻</button>
+    </div>
+   </header>
+   <main id="main-area" class="flex-1 flex flex-col items-center justify-center p-4 md:p-6 overflow-y-auto relative" data-page-node-id="TmyYXBKw3khu9nWdYuAub2">
+   </main>
+   <footer id="feedback-area" class="h-[110px] shrink-0 flex items-center justify-center p-3 transition-colors duration-300 relative z-10" data-page-node-id="12zEPtDfFinCp1xJreBqhl">
+    <div id="feedback-content" class="text-center max-w-2xl w-full" data-page-node-id="57lbqajCAL9A1A3rtGowZp"></div>
+    <div id="combo-float" class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full pointer-events-none" data-page-node-id="DnCy8MjF40CGJhuPRFKjY2"></div>
+   </footer>
+  </div>
+  <div id="overlay" class="fixed inset-0 z-40 bg-black/60 flex items-center justify-center hidden p-4" data-page-node-id="m0EN7T32VEdhrkPbE3NPde">
+   <div id="overlay-panel" class="bg-white rounded-lg shadow-xl p-6 md:p-8 max-w-md w-full text-center max-h-[90vh] overflow-y-auto" data-page-node-id="bs0C015stD5Z6GYUGwrz8O"></div>
+  </div>
+  <script>
+var proverbs = [
+{id:1,en:"Tomorrow is another day.",cn:"明天又是新的一天。"},
+{id:2,en:"Many hands make light work.",cn:"众人拾柴火焰高，人多力量大。"},
+{id:3,en:"Something is better than nothing.",cn:"聊胜于无。"},
+{id:4,en:"The more the merrier.",cn:"人越多越热闹。"},
+{id:5,en:"Every coin has two sides.",cn:"凡事皆有利弊。"},
+{id:6,en:"catch on",cn:"流行起来；理解、明白"},
+{id:7,en:"cook up a storm",cn:"大显身手（做事、做饭菜）"},
+{id:8,en:"bear fruit",cn:"收获成效，开花"},
+{id:9,en:"follow suit",cn:"跟风效仿，照做、依样行事"},
+{id:10,en:"pull one's weight",cn:"尽职尽责，做好分内工作"},
+{id:11,en:"go against the moral grain",cn:"违背道德底线"},
+{id:12,en:"out of place",cn:"格格不入；不得体、不合适"},
+{id:13,en:"nose in the air",cn:"目中无人，高傲自大"},
+{id:14,en:"hat in hand",cn:"毕恭毕敬，谦卑求人"},
+{id:15,en:"come under fire",cn:"遭受批评，饱受指责"},
+{id:16,en:"Teaching is learning.",cn:"教学相长。"},
+{id:17,en:"Still waters run deep.",cn:"静水流深；大智若愚。"},
+{id:18,en:"Knowledge is power.",cn:"知识就是力量。"},
+{id:19,en:"Practice makes perfect.",cn:"熟能生巧。"},
+{id:20,en:"Where there is a will, there is a way.",cn:"有志者事竟成。"},
+{id:21,en:"No pain, no gain.",cn:"不劳无获；一分耕耘，一分收获。"},
+{id:22,en:"Better late than never.",cn:"迟做总比不做好。"},
+{id:23,en:"Rome wasn't built in a day.",cn:"伟业非一日之功。"},
+{id:24,en:"It is never too old to learn.",cn:"活到老，学到老。"},
+{id:25,en:"There is no royal road to learning.",cn:"学无坦途。"},
+{id:26,en:"Every minute counts.",cn:"分秒必争。"},
+{id:27,en:"A good beginning is half done.",cn:"良好的开端是成功的一半。"},
+{id:28,en:"All work and no play makes Jack a dull boy.",cn:"只学不玩耍，聪明孩子也变傻。"},
+{id:29,en:"Early to bed and early to rise makes a man healthy, wealthy and wise.",cn:"早睡早起，健康富足聪慧。"},
+{id:30,en:"Life is not all roses.",cn:"人生不会一帆风顺。"},
+{id:31,en:"When life gives you lemons, make lemonade.",cn:"身处逆境，积极翻盘。"},
+{id:32,en:"Every cloud has a silver lining.",cn:"黑暗中总有一线光明。"},
+{id:33,en:"When pigs fly.",cn:"绝无可能。"},
+{id:34,en:"A friend in need is a friend indeed.",cn:"患难见真情。"},
+{id:35,en:"Blood is thicker than water.",cn:"血浓于水。"},
+{id:36,en:"Like father, like son.",cn:"有其父必有其子。"},
+{id:37,en:"Charity begins at home.",cn:"仁爱始于家庭。"},
+{id:38,en:"Home is where the heart is.",cn:"心安之处即是家。"},
+{id:39,en:"Health is wealth.",cn:"健康即财富。"},
+{id:40,en:"Laughter is the best medicine.",cn:"欢笑是最好的良药。"},
+{id:41,en:"An apple a day keeps the doctor away.",cn:"每日一苹果，医生远离我。"},
+{id:42,en:"Prevention is better than cure.",cn:"预防胜于治疗。"},
+{id:43,en:"Time and tide wait for no man.",cn:"岁月不待人。"},
+{id:44,en:"Don't cry over spilled milk.",cn:"覆水难收，别为往事懊悔。"},
+{id:45,en:"Every dog has its day.",cn:"人人皆有出头之日。"},
+{id:46,en:"pull one's leg",cn:"开玩笑、逗人"},
+{id:47,en:"rain cats and dogs",cn:"下瓢泼大雨"},
+{id:48,en:"have bigger fish to fry",cn:"有更重要的事要做"},
+{id:49,en:"let the cat out of the bag",cn:"无意间泄密"},
+{id:50,en:"kill two birds with one stone",cn:"一石二鸟、一举两得"},
+{id:51,en:"a wolf in sheep's clothing",cn:"披着羊皮的狼"},
+{id:52,en:"hold your horses",cn:"沉住气、别急躁"},
+{id:53,en:"feel blue",cn:"心情低落、郁闷"},
+{id:54,en:"white lie",cn:"善意的谎言"},
+{id:55,en:"black sheep",cn:"害群之马"},
+{id:56,en:"out of the blue",cn:"突如其来、毫无预兆"},
+{id:57,en:"green hand",cn:"新手、生手"},
+{id:58,en:"see red",cn:"勃然大怒"},
+{id:59,en:"red letter day",cn:"大喜之日、纪念日"},
+{id:60,en:"hit the nail on the head",cn:"一语中的、说到点子上"},
+{id:61,en:"turn a blind eye",cn:"视而不见、包庇"},
+{id:62,en:"break a leg",cn:"祝你顺利、一切安好"},
+{id:63,en:"a piece of cake",cn:"小菜一碟、轻而易举"},
+{id:64,en:"icing on the cake",cn:"锦上添花"},
+{id:65,en:"couch potato",cn:"宅家懒人、电视迷"},
+{id:66,en:"in a pickle",cn:"陷入困境、处境为难"},
+{id:67,en:"on cloud nine",cn:"欣喜若狂"},
+{id:68,en:"at the end of the day",cn:"归根结底、说到底"},
+{id:69,en:"make a difference",cn:"产生影响、有所作为"},
+{id:70,en:"out of the question",cn:"完全不可能"},
+{id:71,en:"miss the boat",cn:"错失良机"},
+{id:72,en:"go back to the drawing board",cn:"重新规划、推倒重来"},
+{id:73,en:"Actions speak louder than words.",cn:"行动胜于言辞。"},
+{id:74,en:"Failure is the mother of success.",cn:"失败是成功之母。"},
+{id:75,en:"Look before you leap.",cn:"三思而后行。"},
+{id:76,en:"Two heads are better than one.",cn:"三个臭皮匠顶个诸葛亮。"},
+{id:77,en:"Haste makes waste.",cn:"欲速则不达。"},
+{id:78,en:"All roads lead to Rome.",cn:"条条大路通罗马。"},
+{id:79,en:"The early bird catches the worm.",cn:"早起的鸟儿有虫吃。"},
+{id:80,en:"It's never too late to mend.",cn:"亡羊补牢，为时未晚。"},
+{id:81,en:"Time is money.",cn:"时间就是金钱。"},
+{id:82,en:"A fall into a pit, a gain in your wit.",cn:"吃一堑，长一智。"},
+{id:83,en:"Experience is the mother of wisdom.",cn:"实践出真知。"},
+{id:84,en:"Beauty without virtue is a rose without fragrance.",cn:"无德之美犹如无香之花。"},
+{id:85,en:"It's easier said than done.",cn:"说起来容易做起来难。"},
+{id:86,en:"The first step is always the hardest.",cn:"万事开头难。"},
+{id:87,en:"Nothing is impossible for a willing heart.",cn:"心之所愿，无所不成。"},
+{id:88,en:"All things are difficult before they are easy.",cn:"凡事总是由难而易。"},
+{id:89,en:"Great hopes make great man.",cn:"伟大的抱负造就伟大的人物。"},
+{id:90,en:"God helps those who help themselves.",cn:"天助自助者。"},
+{id:91,en:"East or west, home is best.",cn:"金窝银窝不如自己的草窝。"},
+{id:92,en:"Good company on the road is the shortest cut.",cn:"行路有良伴就是捷径。"},
+{id:93,en:"Constant dripping wears away a stone.",cn:"水滴石穿，绳锯木断。"},
+{id:94,en:"A miss is as good as a mile.",cn:"失之毫厘，差之千里。"},
+{id:95,en:"A young idler, an old beggar.",cn:"少壮不努力，老大徒伤悲。"},
+{id:96,en:"When in Rome, do as the Romans do.",cn:"入乡随俗。"},
+{id:97,en:"Strike while the iron is hot.",cn:"趁热打铁。"},
+{id:98,en:"A journey of a thousand miles begins with a single step.",cn:"千里之行，始于足下。"},
+{id:99,en:"Honesty is the best policy.",cn:"诚实为上策。"},
+{id:100,en:"Pride goes before a fall.",cn:"骄者必败。"},
+{id:101,en:"Seeing is believing.",cn:"眼见为实。"},
+{id:102,en:"Facts speak louder than words.",cn:"事实胜于雄辩。"},
+{id:103,en:"Call black white.",cn:"颠倒黑白；指鹿为马。"},
+{id:104,en:"A sound mind in a sound body.",cn:"健全的精神寓于健康的身体。"},
+{id:105,en:"A still tongue makes a wise head.",cn:"寡言者智。"},
+{id:106,en:"All that ends well is well.",cn:"结果好，就一切都好。"},
+{id:107,en:"Fortune favors the brave.",cn:"勇者天佑。"},
+{id:108,en:"Courage and resolution are the spirit and soul of virtue.",cn:"勇气和决心是美德的精神与灵魂。"},
+{id:109,en:"United we stand, divided we fall.",cn:"合则立，分则败。"},
+{id:110,en:"A hedge between keeps friendship green.",cn:"君子之交淡如水。"},
+{id:111,en:"Without music, life would be a mistake.",cn:"没有音乐，生命将是一个错误。"},
+{id:112,en:"A bird in the hand is worth two in the bush.",cn:"双鸟在林不如一鸟在手。"}
+];
+
+var state = {
+screen:"start",
+level:1,
+questionIndex:0,
+currentPlayer:1,
+scores:[0,0],
+combos:[0,0],
+soundOn:true,
+timerInterval:null,
+timeLeft:0,
+isLocked:false,
+buzzedPlayer:0,
+round4ActivePlayer:0,
+round4Correct:[0,0],
+round4Total:[0,0],
+levelQuestions:[],
+waitingForComplement:false,
+complementPlayer:0
+};
+
+var audioCtx = null;
+
+function getAudioCtx() {
+if (!audioCtx) {
+audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+}
+return audioCtx;
+}
+
+function playTone(freq, type, dur) {
+if (!state.soundOn) return;
+try {
+var ctx = getAudioCtx();
+var osc = ctx.createOscillator();
+var gain = ctx.createGain();
+osc.type = type;
+osc.frequency.value = freq;
+gain.gain.setValueAtTime(0.2, ctx.currentTime);
+gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dur);
+osc.connect(gain);
+gain.connect(ctx.destination);
+osc.start(ctx.currentTime);
+osc.stop(ctx.currentTime + dur);
+} catch(e) {}
+}
+
+function playCorrectSound() {
+  playTone(1047, "sine", 0.08);
+  setTimeout(function(){ playTone(1319, "sine", 0.08); }, 80);
+  setTimeout(function(){ playTone(1568, "sine", 0.12); }, 160);
+  speakEncouragement(["Excellent!", "Perfect!", "Brilliant!", "Outstanding!"]);
+}
+
+function playWrongSound() {
+  playTone(220, "square", 0.18);
+  speakEncouragement(["Try again!", "Keep going!", "Don't give up!"]);
+}
+
+function playBuzzSound() {
+  playTone(880, "sine", 0.06);
+  setTimeout(function(){ playTone(1047, "sine", 0.06); }, 65);
+  setTimeout(function(){ playTone(1319, "sine", 0.08); }, 130);
+}
+
+function playVictorySound() {
+  if (!state.soundOn) return;
+  playTone(659, "sine", 0.12);
+  setTimeout(function(){ playTone(784, "sine", 0.12); }, 120);
+  setTimeout(function(){ playTone(988, "sine", 0.12); }, 240);
+  setTimeout(function(){ playTone(1319, "sine", 0.25); }, 360);
+  speakEncouragement(["Congratulations!", "You're the champion!", "Amazing victory!", "Incredible!"]);
+}
+
+function speakEncouragement(phrases) {
+  if (!state.soundOn) return;
+  if (!window.speechSynthesis) return;
+  try {
+    var phrase = phrases[Math.floor(Math.random() * phrases.length)];
+    var utterance = new SpeechSynthesisUtterance(phrase);
+    utterance.lang = "en-US";
+    utterance.rate = 1.3;
+    utterance.pitch = 1.4;
+    utterance.volume = 0.9;
+    window.speechSynthesis.speak(utterance);
+  } catch(e) {}
+}
+
+function toggleSound() {
+  state.soundOn = !state.soundOn;
+  document.getElementById("sound-btn").textContent = state.soundOn ? "🔊" : "🔇";
+}
+
+function shuffle(arr) {
+var a = arr.slice();
+for (var i = a.length - 1; i > 0; i--) {
+var j = Math.floor(Math.random() * (i + 1));
+var tmp = a[i];
+a[i] = a[j];
+a[j] = tmp;
+}
+return a;
+}
+
+function pickRandom(arr, n) {
+return shuffle(arr).slice(0, n);
+}
+
+function startGame() {
+document.getElementById("screen-start").classList.add("hidden");
+document.getElementById("game-container").classList.remove("hidden");
+state.scores = [0, 0];
+state.combos = [0, 0];
+state.level = 1;
+state.round4Correct = [0, 0];
+state.round4Total = [0, 0];
+updateScoreDisplay();
+startLevel(1);
+}
+
+function restartGame() {
+clearInterval(state.timerInterval);
+hideOverlay();
+document.getElementById("game-container").classList.add("hidden");
+document.getElementById("screen-start").classList.remove("hidden");
+state.scores = [0, 0];
+state.combos = [0, 0];
+state.level = 1;
+state.isLocked = false;
+state.waitingForComplement = false;
+clearFeedback();
+stopTimer();
+showTimerBox(false);
+}
+
+function backToStart() {
+clearInterval(state.timerInterval);
+stopTimer();
+hideOverlay();
+document.getElementById("game-container").classList.add("hidden");
+document.getElementById("screen-start").classList.remove("hidden");
+state.scores = [0, 0];
+state.combos = [0, 0];
+state.level = 1;
+state.questionIndex = 0;
+state.isLocked = false;
+state.buzzedPlayer = 0;
+state.waitingForComplement = false;
+clearFeedback();
+showTimerBox(false);
+}
+
+function updateScoreDisplay() {
+var p1s = document.getElementById("p1-score-header");
+var p2s = document.getElementById("p2-score-header");
+if (p1s) p1s.textContent = state.scores[0];
+if (p2s) p2s.textContent = state.scores[1];
+}
+
+function updatePlayerIndicator() {
+var p1i = document.getElementById("p1-indicator");
+var p2i = document.getElementById("p2-indicator");
+if (!p1i || !p2i) return;
+if (state.currentPlayer === 1) {
+p1i.classList.add("bg-[#F2B84B]", "pulse-glow");
+p1i.classList.remove("bg-gray-500");
+p2i.classList.remove("bg-[#F2B84B]", "pulse-glow");
+p2i.classList.add("bg-blue-300");
+} else {
+p2i.classList.add("bg-[#F2B84B]", "pulse-glow");
+p2i.classList.remove("bg-blue-300");
+p1i.classList.remove("bg-[#F2B84B]", "pulse-glow");
+p1i.classList.add("bg-gray-500");
+}
+}
+
+function showTimerBox(show) {
+var tb = document.getElementById("timer-box");
+if (show) {
+tb.classList.remove("hidden");
+tb.classList.add("flex");
+} else {
+tb.classList.add("hidden");
+tb.classList.remove("flex");
+}
+}
+
+function setTimerText(t) {
+document.getElementById("timer-display").textContent = t;
+}
+
+function startLevel(lv) {
+state.level = lv;
+state.questionIndex = 0;
+state.isLocked = false;
+state.waitingForComplement = false;
+clearFeedback();
+showTimerBox(false);
+if (lv === 1) {
+generateLevel1();
+} else if (lv === 2) {
+generateLevel2();
+} else if (lv === 3) {
+generateLevel3();
+} else if (lv === 4) {
+showRound4Intro();
+return;
+}
+renderQuestion();
+}
+
+function generateLevel1() {
+var pool = shuffle(proverbs.slice(0, 8));
+var selected = pool.slice(0, 6);
+state.levelQuestions = [];
+for (var i = 0; i < selected.length; i++) {
+var p = selected[i];
+var others = proverbs.filter(function(x){ return x.id !== p.id; });
+var wrongs = pickRandom(others, 3).map(function(x){ return x.cn; });
+var opts = shuffle([p.cn].concat(wrongs));
+state.levelQuestions.push({
+proverb: p,
+options: opts,
+correctAnswer: p.cn
+});
+}
+}
+
+function generateLevel2() {
+var scenarios = [
+{text:"朋友考试失利很沮丧，你想鼓励他：心怀志向，坚持努力终会成功。",answerId:20},
+{text:"班里组织活动人手不够，你提议叫上更多同学——人越多越热闹嘛。",answerId:4},
+{text:"网上学习很方便但也有弊端，你想说明凡事皆有利弊。",answerId:5},
+{text:"同学觉得开始复习已经太晚，干脆想放弃，你劝他迟做总比不做好。",answerId:22},
+{text:"爷爷退休后开始学画画，他说学习这件事永远不嫌晚。",answerId:24},
+{text:"同桌今天情绪低落，你讲了个笑话逗得他开怀大笑——你想到了哪句谚语？",answerId:40}
+];
+state.levelQuestions = [];
+for (var i = 0; i < scenarios.length; i++) {
+var sc = scenarios[i];
+var correctP = proverbs.find(function(x){ return x.id === sc.answerId; });
+var others = proverbs.filter(function(x){ return x.id !== sc.answerId; });
+var wrongs = pickRandom(others, 3).map(function(x){ return x.en; });
+var opts = shuffle([correctP.en].concat(wrongs));
+state.levelQuestions.push({
+scenario: sc.text,
+options: opts,
+correctAnswer: correctP.en,
+correctProverb: correctP
+});
+}
+}
+
+function generateLevel3() {
+var scenarios = [
+{text:"你想表达'只要反复练习就能做好'，应该用哪句谚语？",answerId:19,distractors:[18,24]},
+{text:"同学对是否上网课犹豫不决，你想说明事物都有利弊两面。",answerId:5,distractors:[30,20]},
+{text:"你想告诫别人珍惜时间，因为岁月不等人。",answerId:43,distractors:[26,23]},
+{text:"朋友遭遇挫折很失落，你鼓励他：黑暗中总有一线光明。",answerId:32,distractors:[30,45]},
+{text:"同桌在你遇到困难时伸出援手，你感慨患难见真情。",answerId:34,distractors:[35,36]}
+];
+state.levelQuestions = [];
+for (var i = 0; i < scenarios.length; i++) {
+var sc = scenarios[i];
+var correctP = proverbs.find(function(x){ return x.id === sc.answerId; });
+var dPs = sc.distractors.map(function(did){
+return proverbs.find(function(x){ return x.id === did; }).en;
+});
+var opts = shuffle([correctP.en].concat(dPs));
+state.levelQuestions.push({
+scenario: sc.text,
+options: opts,
+correctAnswer: correctP.en,
+correctProverb: correctP
+});
+}
+}
+
+function renderQuestion() {
+updatePlayerIndicator();
+clearFeedback();
+state.isLocked = false;
+state.waitingForComplement = false;
+if (state.level === 1) {
+renderLevel1Question();
+} else if (state.level === 2) {
+renderLevel2Question();
+} else if (state.level === 3) {
+renderLevel3Question();
+}
+}
+
+function renderLevel1Question() {
+var q = state.levelQuestions[state.questionIndex];
+var total = state.levelQuestions.length;
+document.getElementById("level-name").textContent = "第1关：配对热身赛";
+document.getElementById("level-progress").textContent = (state.questionIndex+1) + "/" + total;
+var main = document.getElementById("main-area");
+var html = "";
+html += '<div class="mb-2 text-2xl text-gray-700 font-bold">两位玩家同时答题</div>';
+html += '<div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl shadow-md p-3 mb-2 w-full border-2 border-blue-200">';
+html += '<p class="text-base text-gray-600 mb-1 font-medium">请选出以下英文谚语的正确中文释义：</p>';
+html += '<h2 class="text-3xl font-bold text-[#1F3A5F] leading-tight">' + q.proverb.en + '</h2>';
+html += '</div>';
+html += '<div class="grid grid-cols-2 gap-6 w-full">';
+html += '<div><div class="text-2xl font-bold text-white mb-2 bg-gradient-to-r from-blue-500 to-blue-600 p-2.5 rounded-lg text-center shadow-md">玩家1 请选择</div>';
+html += '<div class="grid grid-cols-1 gap-1.5" id="options-p1">';
+for (var i = 0; i < q.options.length; i++) {
+html += '<button onclick="handleL1AnswerSimultaneous(this,\'' + escAttr(q.options[i]) + '\',1)" class="opt-btn bg-white border-3 border-gray-300 rounded-lg p-2.5 text-left text-xl text-[#1F3A5F] shadow hover:border-blue-400 hover:shadow-lg font-medium transition-all">';
+html += '<span class="font-bold text-blue-500 mr-2 text-xl">' + String.fromCharCode(65+i) + '.</span>';
+html += escHtml(q.options[i]);
+html += '</button>';
+}
+html += '</div></div>';
+html += '<div><div class="text-2xl font-bold text-white mb-2 bg-gradient-to-r from-green-500 to-green-600 p-2.5 rounded-lg text-center shadow-md">玩家2 请选择</div>';
+html += '<div class="grid grid-cols-1 gap-1.5" id="options-p2">';
+for (var i = 0; i < q.options.length; i++) {
+html += '<button onclick="handleL1AnswerSimultaneous(this,\'' + escAttr(q.options[i]) + '\',2)" class="opt-btn bg-white border-3 border-gray-300 rounded-lg p-2.5 text-left text-xl text-[#1F3A5F] shadow hover:border-green-400 hover:shadow-lg font-medium transition-all">';
+html += '<span class="font-bold text-green-500 mr-2 text-xl">' + String.fromCharCode(65+i) + '.</span>';
+html += escHtml(q.options[i]);
+html += '</button>';
+}
+html += '</div></div>';
+html += '</div>';
+main.innerHTML = html;
+state.simultaneousAnswers = {p1: null, p2: null};
+}
+
+function renderLevel2Question() {
+var q = state.levelQuestions[state.questionIndex];
+var total = state.levelQuestions.length;
+document.getElementById("level-name").textContent = "第2关：情景应用赛";
+document.getElementById("level-progress").textContent = (state.questionIndex+1) + "/" + total;
+var main = document.getElementById("main-area");
+var html = "";
+html += '<div class="mb-2 text-2xl text-gray-700 font-bold">两位玩家同时答题</div>';
+html += '<div class="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl shadow-md p-3 mb-2 w-full border-2 border-amber-200">';
+html += '<p class="text-base text-gray-600 mb-1 font-medium">阅读以下情境，选出最恰当的英文谚语：</p>';
+html += '<p class="text-2xl text-[#1F3A5F] font-bold leading-tight">"' + q.scenario + '"</p>';
+html += '</div>';
+html += '<div class="grid grid-cols-2 gap-6 w-full">';
+html += '<div><div class="text-2xl font-bold text-white mb-2 bg-gradient-to-r from-blue-500 to-blue-600 p-2.5 rounded-lg text-center shadow-md">玩家1 请选择</div>';
+html += '<div class="grid grid-cols-1 gap-1.5" id="options-p1">';
+for (var i = 0; i < q.options.length; i++) {
+html += '<button onclick="handleL2AnswerSimultaneous(this,\'' + escAttr(q.options[i]) + '\',1)" class="opt-btn bg-white border-3 border-gray-300 rounded-lg p-2.5 text-left text-xl text-[#1F3A5F] shadow hover:border-blue-400 hover:shadow-lg font-medium transition-all">';
+html += '<span class="font-bold text-blue-500 mr-2 text-xl">' + String.fromCharCode(65+i) + '.</span>';
+html += escHtml(q.options[i]);
+html += '</button>';
+}
+html += '</div></div>';
+html += '<div><div class="text-2xl font-bold text-white mb-2 bg-gradient-to-r from-green-500 to-green-600 p-2.5 rounded-lg text-center shadow-md">玩家2 请选择</div>';
+html += '<div class="grid grid-cols-1 gap-1.5" id="options-p2">';
+for (var i = 0; i < q.options.length; i++) {
+html += '<button onclick="handleL2AnswerSimultaneous(this,\'' + escAttr(q.options[i]) + '\',2)" class="opt-btn bg-white border-3 border-gray-300 rounded-lg p-2.5 text-left text-xl text-[#1F3A5F] shadow hover:border-green-400 hover:shadow-lg font-medium transition-all">';
+html += '<span class="font-bold text-green-500 mr-2 text-xl">' + String.fromCharCode(65+i) + '.</span>';
+html += escHtml(q.options[i]);
+html += '</button>';
+}
+html += '</div></div>';
+html += '</div>';
+main.innerHTML = html;
+state.simultaneousAnswers = {p1: null, p2: null};
+}
+
+function renderLevel3Question() {
+var q = state.levelQuestions[state.questionIndex];
+var total = state.levelQuestions.length;
+document.getElementById("level-name").textContent = "第3关：抢答辨析赛";
+document.getElementById("level-progress").textContent = (state.questionIndex+1) + "/" + total;
+state.buzzedPlayer = 0;
+showTimerBox(true);
+var main = document.getElementById("main-area");
+var html = "";
+html += '<div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl shadow-md p-3 mb-2 w-full border-2 border-purple-200">';
+html += '<p class="text-base text-gray-600 mb-1 font-medium">阅读语境后，迅速按下抢答按钮！</p>';
+html += '<p class="text-2xl text-[#1F3A5F] font-bold leading-tight">"' + q.scenario + '"</p>';
+html += '</div>';
+html += '<div class="flex items-center gap-6 w-full">';
+html += '<button id="buzz-btn" onclick="handleBuzz()" class="w-44 h-44 rounded-full bg-gradient-to-br from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-black text-5xl shadow-2xl transition-all active:scale-90 pulse-glow flex-shrink-0 border-4 border-red-700">抢答!</button>';
+html += '<div id="l3-options" class="grid grid-cols-1 gap-1.5 flex-1 hidden">';
+for (var i = 0; i < q.options.length; i++) {
+html += '<button onclick="handleL3Answer(this,\'' + escAttr(q.options[i]) + '\')" class="opt-btn bg-white border-3 border-gray-300 rounded-lg p-2.5 text-left text-xl text-[#1F3A5F] shadow hover:border-purple-400 hover:shadow-lg font-medium transition-all">';
+html += '<span class="font-bold text-purple-500 mr-2 text-xl">' + String.fromCharCode(65+i) + '.</span>';
+html += escHtml(q.options[i]);
+html += '</button>';
+}
+html += '</div>';
+html += '</div>';
+main.innerHTML = html;
+startCountdown(5, function(){
+if (!state.buzzedPlayer) {
+showFeedbackRaw("⏰ 时间到！双方均未抢答。", "", "#9CA3AF");
+disableBuzzBtn();
+setTimeout(nextQuestion, 2000);
+}
+});
+}
+
+function handleBuzz() {
+if (state.buzzedPlayer || state.isLocked) return;
+state.buzzedPlayer = state.currentPlayer;
+playBuzzSound();
+stopTimer();
+disableBuzzBtn();
+var buzzBtn = document.getElementById("buzz-btn");
+if (buzzBtn) {
+buzzBtn.classList.remove("pulse-glow");
+buzzBtn.classList.add("bg-green-500");
+buzzBtn.textContent = "P" + state.buzzedPlayer + " 抢到!";
+}
+document.getElementById("l3-options").classList.remove("hidden");
+state.isLocked = false;
+showTimerBox(true);
+startCountdown(5, function(){
+handleL3Timeout();
+});
+}
+
+function disableBuzzBtn() {
+var btn = document.getElementById("buzz-btn");
+if (btn) {
+btn.disabled = true;
+btn.classList.remove("hover:bg-red-600", "active:scale-90", "pulse-glow");
+}
+}
+
+function handleL3Timeout() {
+if (state.isLocked) return;
+state.isLocked = true;
+var opponent = state.buzzedPlayer === 1 ? 2 : 1;
+state.scores[opponent - 1] += 5;
+updateScoreDisplay();
+var q = state.levelQuestions[state.questionIndex];
+showFeedbackRaw("⏰ 答题超时！对方得5分。", "正确答案：" + q.correctAnswer, "#D96C6C");
+disableOptions();
+setTimeout(nextQuestion, 2500);
+}
+
+function handleL1AnswerSimultaneous(btn, selected, player) {
+if (state.simultaneousAnswers['p' + player]) return;
+state.simultaneousAnswers['p' + player] = selected;
+btn.style.borderColor = '#F2B84B';
+btn.style.fontWeight = 'bold';
+var optsDiv = document.getElementById('options-p' + player);
+var btns = optsDiv.querySelectorAll('.opt-btn');
+for (var i = 0; i < btns.length; i++) {
+btns[i].disabled = true;
+}
+if (state.simultaneousAnswers.p1 && state.simultaneousAnswers.p2) {
+processSimultaneousL1Answers();
+}
+}
+
+function handleL2AnswerSimultaneous(btn, selected, player) {
+if (state.simultaneousAnswers['p' + player]) return;
+state.simultaneousAnswers['p' + player] = selected;
+btn.style.borderColor = '#F2B84B';
+btn.style.fontWeight = 'bold';
+var optsDiv = document.getElementById('options-p' + player);
+var btns = optsDiv.querySelectorAll('.opt-btn');
+for (var i = 0; i < btns.length; i++) {
+btns[i].disabled = true;
+}
+if (state.simultaneousAnswers.p1 && state.simultaneousAnswers.p2) {
+processSimultaneousL2Answers();
+}
+}
+
+function processSimultaneousL1Answers() {
+state.isLocked = true;
+var q = state.levelQuestions[state.questionIndex];
+var p1Correct = state.simultaneousAnswers.p1 === q.correctAnswer;
+var p2Correct = state.simultaneousAnswers.p2 === q.correctAnswer;
+if (p1Correct) {
+state.scores[0] += 10;
+}
+if (p2Correct) {
+state.scores[1] += 10;
+}
+updateScoreDisplay();
+var msg = "";
+if (p1Correct && p2Correct) {
+msg = "🎉 两位玩家都答对了！各得10分";
+playCorrectSound();
+} else if (p1Correct) {
+msg = "✅ 玩家1答对！+10分";
+playCorrectSound();
+} else if (p2Correct) {
+msg = "✅ 玩家2答对！+10分";
+playCorrectSound();
+} else {
+msg = "❌ 两位玩家都答错了";
+playWrongSound();
+}
+showFeedbackRaw(msg, "正确答案：" + q.correctAnswer, p1Correct || p2Correct ? "#4CAF7D" : "#D96C6C");
+setTimeout(nextQuestion, 2500);
+}
+
+function processSimultaneousL2Answers() {
+state.isLocked = true;
+var q = state.levelQuestions[state.questionIndex];
+var p1Correct = state.simultaneousAnswers.p1 === q.correctAnswer;
+var p2Correct = state.simultaneousAnswers.p2 === q.correctAnswer;
+if (p1Correct) {
+state.scores[0] += 15;
+}
+if (p2Correct) {
+state.scores[1] += 15;
+}
+updateScoreDisplay();
+var explanation = "此语境适合使用「" + q.correctProverb.cn + "」";
+var msg = "";
+if (p1Correct && p2Correct) {
+msg = "🎉 两位玩家都答对了！各得15分";
+playCorrectSound();
+} else if (p1Correct) {
+msg = "✅ 玩家1答对！+15分";
+playCorrectSound();
+} else if (p2Correct) {
+msg = "✅ 玩家2答对！+15分";
+playCorrectSound();
+} else {
+msg = "❌ 两位玩家都答错了";
+playWrongSound();
+}
+showFeedbackRaw(msg, explanation + " · 正确答案：" + q.correctAnswer, p1Correct || p2Correct ? "#4CAF7D" : "#D96C6C");
+setTimeout(nextQuestion, 2500);
+}
+
+function handleL3Answer(btn, selected) {
+if (state.isLocked) return;
+state.isLocked = true;
+stopTimer();
+var q = state.levelQuestions[state.questionIndex];
+var isCorrect = selected === q.correctAnswer;
+var answerer = state.buzzedPlayer;
+var opponent = answerer === 1 ? 2 : 1;
+if (isCorrect) {
+state.combos[answerer - 1]++;
+var bonus = state.combos[answerer - 1] >= 2 ? 10 : 0;
+var pts = 20 + bonus;
+state.scores[answerer - 1] += pts;
+updateScoreDisplay();
+playCorrectSound();
+highlightBtn(btn, true);
+var msg = randomEncourage() + " 抢答成功！+" + pts + "分";
+showComboFloat(state.combos[answerer - 1]);
+showFeedbackRaw(msg, "", "#4CAF7D");
+} else {
+state.combos[answerer - 1] = 0;
+state.scores[opponent - 1] += 5;
+updateScoreDisplay();
+playWrongSound();
+highlightBtn(btn, false);
+markCorrectOption(q.correctAnswer);
+showFeedbackRaw("答错了，对方得5分！", "正确答案：" + q.correctAnswer, "#D96C6C");
+}
+setTimeout(nextQuestion, 2500);
+}
+
+function processCorrect(btn, basePoints, comboBonus, correctAns, explanation) {
+state.combos[state.currentPlayer - 1]++;
+var bonus = state.combos[state.currentPlayer - 1] >= 2 ? comboBonus : 0;
+var pts = basePoints + bonus;
+state.scores[state.currentPlayer - 1] += pts;
+updateScoreDisplay();
+playCorrectSound();
+highlightBtn(btn, true);
+var msg = randomEncourage() + " +" + pts + "分";
+showComboFloat(state.combos[state.currentPlayer - 1]);
+showFeedbackRaw(msg, explanation, "#4CAF7D");
+setTimeout(nextQuestion, 2000);
+}
+
+function processWrong(btn, correctAns, explanation) {
+state.combos[state.currentPlayer - 1] = 0;
+playWrongSound();
+highlightBtn(btn, false);
+markCorrectOption(correctAns);
+var msg = randomWrongMsg();
+showFeedbackRaw(msg, "正确答案：" + correctAns + (explanation ? "。" + explanation : ""), "#D96C6C");
+}
+
+function showComplementChance(q) {
+state.currentPlayer = state.complementPlayer;
+state.isLocked = false;
+updatePlayerIndicator();
+var main = document.getElementById("main-area");
+var html = "";
+html += '<div class="mb-2 text-sm text-[#F2B84B] font-bold animate-pulse">玩家 ' + state.currentPlayer + ' 的补答机会！（答对得5分）</div>';
+html += '<div class="bg-white rounded-md shadow-sm p-6 md:p-8 mb-6 w-full max-w-2xl text-center">';
+html += '<h2 class="text-xl md:text-2xl font-bold text-[#1F3A5F]">' + q.proverb.en + '</h2>';
+html += '</div>';
+html += '<div class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-2xl" id="options-grid">';
+var remaining = q.options.filter(function(o){ return o !== state.levelQuestions[state.questionIndex].correctAnswer || true; });
+for (var i = 0; i < q.options.length; i++) {
+html += '<button onclick="handleComplement(this,\'' + escAttr(q.options[i]) + '\')" class="opt-btn bg-white border-2 border-gray-200 rounded-md p-4 text-left text-base md:text-lg text-[#1F3A5F] shadow-sm hover:border-[#F2B84B]">';
+html += '<span class="font-bold text-gray-400 mr-2">' + String.fromCharCode(65+i) + '.</span>';
+html += escHtml(q.options[i]);
+html += '</button>';
+}
+html += '</div>';
+main.innerHTML = html;
+}
+
+function handleComplement(btn, selected) {
+if (state.isLocked) return;
+state.isLocked = true;
+state.waitingForComplement = false;
+var q = state.levelQuestions[state.questionIndex];
+if (selected === q.correctAnswer) {
+state.scores[state.currentPlayer - 1] += 5;
+updateScoreDisplay();
+playCorrectSound();
+highlightBtn(btn, true);
+showFeedbackRaw("补答正确！+5分", "", "#4CAF7D");
+} else {
+playWrongSound();
+highlightBtn(btn, false);
+showFeedbackRaw("补答错误！", "正确答案：" + q.correctAnswer, "#D96C6C");
+}
+setTimeout(nextQuestion, 2000);
+}
+
+function nextQuestion() {
+state.questionIndex++;
+if (state.questionIndex >= state.levelQuestions.length) {
+endLevel();
+return;
+}
+if (state.level !== 3) {
+state.currentPlayer = state.currentPlayer === 1 ? 2 : 1;
+} else {
+state.currentPlayer = state.currentPlayer === 1 ? 2 : 1;
+}
+renderQuestion();
+}
+
+function endLevel() {
+stopTimer();
+showTimerBox(false);
+if (state.level === 4) {
+showFinalResult();
+return;
+}
+showLevelTransition();
+}
+
+function showLevelTransition() {
+playVictorySound();
+var panel = document.getElementById("overlay-panel");
+var nextLv = state.level + 1;
+var nextNames = {2:"情景谚语应用赛",3:"谚语抢答辨析赛",4:"限时车轮战"};
+var winner = state.scores[0] > state.scores[1] ? 1 : (state.scores[1] > state.scores[0] ? 2 : 0);
+var html = "";
+html += '<h2 class="text-2xl font-bold text-[#1F3A5F] mb-4">第' + state.level + '关结束！</h2>';
+html += '<div class="flex justify-center gap-8 mb-4">';
+html += '<div class="text-center"><p class="text-sm text-gray-500">玩家1</p><p class="text-3xl font-bold text-[#F2B84B]">' + state.scores[0] + '</p>';
+if (winner === 1 || winner === 0) html += '<div class="text-6xl mt-2 drop-shadow-lg" style="filter: brightness(1.3) saturate(1.5);">💐</div>';
+html += '</div>';
+html += '<div class="text-center"><p class="text-sm text-gray-500">玩家2</p><p class="text-3xl font-bold text-blue-500">' + state.scores[1] + '</p>';
+if (winner === 2 || winner === 0) html += '<div class="text-6xl mt-2 drop-shadow-lg" style="filter: brightness(1.3) saturate(1.5);">💐</div>';
+html += '</div>';
+html += '</div>';
+html += '<div class="bg-gray-50 rounded p-3 mb-4 text-sm text-gray-600">';
+html += '<p>下一关预告：<strong>第' + nextLv + '关 · ' + nextNames[nextLv] + '</strong></p>';
+if (nextLv === 3) html += '<p class="mt-1 text-[#D96C6C]">准备好你的手速！点击抢答按钮争夺答题权！</p>';
+if (nextLv === 4) html += '<p class="mt-1 text-[#D96C6C]">每人60秒独立挑战，尽可能多答对！</p>';
+html += '</div>';
+html += '<button onclick="goNextLevel()" class="bg-[#F2B84B] hover:bg-yellow-500 text-[#1F3A5F] font-bold px-8 py-3 rounded shadow transition-all hover:scale-105">进入下一关</button>';
+panel.innerHTML = html;
+showOverlay();
+}
+
+function goNextLevel() {
+hideOverlay();
+state.level++;
+state.combos = [0, 0];
+startLevel(state.level);
+}
+
+function showRound4Intro() {
+document.getElementById("level-name").textContent = "第4关：限时车轮战";
+document.getElementById("level-progress").textContent = "";
+var panel = document.getElementById("overlay-panel");
+var html = "";
+html += '<h2 class="text-2xl font-bold text-[#1F3A5F] mb-3">第4关：限时车轮战</h2>';
+html += '<p class="text-gray-600 mb-4 text-sm leading-relaxed">每位玩家各有 <strong>60秒</strong> 独立作答时间。<br>混合题型随机出现，答对+10分，连续答对3题起每连击+5加成。<br>玩家1先挑战，玩家2观看；然后交换。</p>';
+html += '<button onclick="startRound4Turn(1)" class="bg-[#F2B84B] hover:bg-yellow-500 text-[#1F3A5F] font-bold px-8 py-3 rounded shadow transition-all hover:scale-105">玩家1 准备开始</button>';
+panel.innerHTML = html;
+showOverlay();
+}
+
+function startRound4Turn(player) {
+hideOverlay();
+state.round4ActivePlayer = player;
+state.currentPlayer = player;
+state.combos[player - 1] = 0;
+state.round4Correct[player - 1] = 0;
+state.round4Total[player - 1] = 0;
+updatePlayerIndicator();
+showTimerBox(true);
+generateRound4Question();
+startCountdown(60, function(){
+endRound4Turn();
+});
+}
+
+var round4Scenarios = [
+{text:"鼓励他人坚持努力，有志者事竟成。",answerId:20},
+{text:"强调团队合作、人多力量大。",answerId:2},
+{text:"说明不付出就没有收获。",answerId:21},
+{text:"说明熟能生巧的道理。",answerId:19},
+{text:"鼓励终身学习，活到老学到老。",answerId:24},
+{text:"提醒珍惜时间，岁月不待人。",answerId:43},
+{text:"强调知识的力量。",answerId:18},
+{text:"说明事物都有两面性。",answerId:5},
+{text:"说明患难见真情。",answerId:34},
+{text:"劝人别怕开始得晚，迟做总比不做好。",answerId:22},
+{text:"强调分秒必争、珍惜每分钟。",answerId:26},
+{text:"鼓励身处逆境也要积极翻盘。",answerId:31},
+{text:"说明良好的开端是成功的一半。",answerId:27},
+{text:"说明欢笑是最好的良药。",answerId:40},
+{text:"说明努力终会收获成效、开花结果。",answerId:8}
+];
+
+function generateRound4Question() {
+var type = Math.floor(Math.random() * 3);
+var p = null;
+if (type === 2) {
+var scIds = round4Scenarios.map(function(s){ return s.answerId; });
+var pool = proverbs.filter(function(x){ return scIds.indexOf(x.id) !== -1; });
+p = pool[Math.floor(Math.random() * pool.length)];
+} else {
+p = proverbs[Math.floor(Math.random() * proverbs.length)];
+}
+var q = null;
+if (type === 0) {
+var others = proverbs.filter(function(x){ return x.id !== p.id; });
+var wrongs = pickRandom(others, 3).map(function(x){ return x.cn; });
+var opts = shuffle([p.cn].concat(wrongs));
+q = {type:"en2cn", question: p.en, options: opts, correctAnswer: p.cn, proverb: p};
+} else if (type === 1) {
+var others = proverbs.filter(function(x){ return x.id !== p.id; });
+var wrongs = pickRandom(others, 3).map(function(x){ return x.en; });
+var opts = shuffle([p.en].concat(wrongs));
+q = {type:"cn2en", question: p.cn, options: opts, correctAnswer: p.en, proverb: p};
+} else {
+var sc = round4Scenarios.find(function(s){ return s.answerId === p.id; });
+var correctP = proverbs.find(function(x){ return x.id === sc.answerId; });
+var others = proverbs.filter(function(x){ return x.id !== sc.answerId; });
+var wrongs = pickRandom(others, 3).map(function(x){ return x.en; });
+var opts = shuffle([correctP.en].concat(wrongs));
+q = {type:"scenario", question: sc.text, options: opts, correctAnswer: correctP.en, proverb: correctP};
+}
+renderRound4Question(q);
+}
+
+function renderRound4Question(q) {
+var main = document.getElementById("main-area");
+var typeLabel = q.type === "en2cn" ? "英译中" : (q.type === "cn2en" ? "中译英" : "情景选谚");
+var html = "";
+html += '<div class="mb-2 text-sm text-gray-500 font-medium">玩家 ' + state.round4ActivePlayer + ' 挑战中...</div>';
+html += '<div class="bg-white rounded-md shadow-sm p-4 md:p-5 mb-4 w-full max-w-2xl text-center">';
+html += '<span class="inline-block bg-[#1F3A5F] text-white text-xs px-2 py-0.5 rounded mb-2">' + typeLabel + '</span>';
+html += '<h2 class="text-lg md:text-xl font-bold text-[#1F3A5F] leading-relaxed">' + escHtml(q.question) + '</h2>';
+html += '</div>';
+html += '<div class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full max-w-2xl" id="options-grid">';
+for (var i = 0; i < q.options.length; i++) {
+html += '<button onclick="handleR4Answer(this,\'' + escAttr(q.options[i]) + '\',\'' + escAttr(q.correctAnswer) + '\')" class="opt-btn bg-white border-2 border-gray-200 rounded-md p-3 text-left text-sm md:text-base text-[#1F3A5F] shadow-sm hover:border-[#F2B84B]">';
+html += '<span class="font-bold text-gray-400 mr-1">' + String.fromCharCode(65+i) + '.</span>';
+html += escHtml(q.options[i]);
+html += '</button>';
+}
+html += '</div>';
+main.innerHTML = html;
+state.isLocked = false;
+}
+
+function handleR4Answer(btn, selected, correct) {
+if (state.isLocked) return;
+state.isLocked = true;
+state.round4Total[state.round4ActivePlayer - 1]++;
+var isCorrect = selected === correct;
+if (isCorrect) {
+state.combos[state.round4ActivePlayer - 1]++;
+state.round4Correct[state.round4ActivePlayer - 1]++;
+var bonus = state.combos[state.round4ActivePlayer - 1] >= 3 ? 5 : 0;
+var pts = 10 + bonus;
+state.scores[state.round4ActivePlayer - 1] += pts;
+updateScoreDisplay();
+playCorrectSound();
+highlightBtn(btn, true);
+showComboFloat(state.combos[state.round4ActivePlayer - 1]);
+clearFeedback();
+} else {
+state.combos[state.round4ActivePlayer - 1] = 0;
+playWrongSound();
+highlightBtn(btn, false);
+markCorrectOption(correct);
+showFeedbackRaw("", "正确答案：" + correct, "#D96C6C");
+}
+disableOptions();
+setTimeout(function(){
+if (state.timeLeft > 0) {
+generateRound4Question();
+}
+}, isCorrect ? 500 : 1200);
+}
+
+function endRound4Turn() {
+stopTimer();
+state.isLocked = true;
+if (state.round4ActivePlayer === 1) {
+var panel = document.getElementById("overlay-panel");
+var html = "";
+html += '<h2 class="text-xl font-bold text-[#1F3A5F] mb-3">玩家1 挑战结束！</h2>';
+html += '<p class="text-gray-600 mb-2">答对 ' + state.round4Correct[0] + ' 题 / 共 ' + state.round4Total[0] + ' 题</p>';
+html += '<p class="text-2xl font-bold text-[#F2B84B] mb-4">当前得分：' + state.scores[0] + '</p>';
+html += '<p class="text-sm text-gray-500 mb-4">现在轮到玩家2挑战！</p>';
+html += '<button onclick="startRound4Turn(2)" class="bg-blue-500 hover:bg-blue-600 text-white font-bold px-8 py-3 rounded shadow transition-all hover:scale-105">玩家2 开始</button>';
+panel.innerHTML = html;
+showOverlay();
+} else {
+endLevel();
+}
+}
+
+function showFinalResult() {
+var p1 = state.scores[0];
+var p2 = state.scores[1];
+var winner = p1 > p2 ? 1 : (p2 > p1 ? 2 : 0);
+var maxScore = Math.max(p1, p2);
+var stars = maxScore >= 150 ? 3 : (maxScore >= 80 ? 2 : 1);
+var panel = document.getElementById("overlay-panel");
+var html = "";
+html += '<h2 class="text-3xl font-bold text-[#1F3A5F] mb-2">对战结束！</h2>';
+var animals = ['🐶', '🐱', '🐼', '🐰', '🦄', '🐻', '🐯', '🦁', '🐷', '🐨'];
+var randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+if (winner === 0) {
+html += '<div class="mb-4">';
+var animal1 = animals[Math.floor(Math.random() * animals.length)];
+var animal2 = animals[Math.floor(Math.random() * animals.length)];
+html += '<div class="text-8xl mb-3 bounce-it inline-block drop-shadow-2xl" style="filter: brightness(1.4) saturate(1.8) contrast(1.2);">' + animal1 + ' ' + animal2 + '</div>';
+html += '<p class="text-xl text-[#F2B84B] font-bold mb-2">平局！势均力敌！</p>';
+html += '<p class="text-sm text-gray-600">两位都很棒，继续加油！</p>';
+html += '</div>';
+} else {
+html += '<div class="mb-4">';
+html += '<div class="text-9xl mb-3 bounce-it inline-block drop-shadow-2xl" style="filter: brightness(1.4) saturate(1.8) contrast(1.2);">' + randomAnimal + '</div>';
+html += '<p class="text-xl text-[#F2B84B] font-bold mb-2">🏆 玩家 ' + winner + ' 获胜！</p>';
+html += '<p class="text-sm text-gray-600">恭喜你赢得了可爱的小动物礼物！</p>';
+html += '</div>';
+}
+html += '<div class="flex justify-center gap-8 mb-4">';
+html += '<div class="text-center"><p class="text-sm text-gray-500">玩家1</p><p class="text-4xl font-bold text-[#F2B84B]">' + p1 + '</p></div>';
+html += '<div class="text-center"><p class="text-sm text-gray-500">玩家2</p><p class="text-4xl font-bold text-blue-500">' + p2 + '</p></div>';
+html += '</div>';
+html += '<div class="flex justify-center gap-1 mb-4">';
+for (var i = 0; i < 3; i++) {
+if (i < stars) {
+html += '<span class="text-3xl text-[#F2B84B]">★</span>';
+} else {
+html += '<span class="text-3xl text-gray-300">★</span>';
+}
+}
+html += '</div>';
+html += '<p class="text-sm text-gray-500 mb-1">玩家1答对 ' + state.round4Correct[0] + ' 题（第4关）</p>';
+html += '<p class="text-sm text-gray-500 mb-4">玩家2答对 ' + state.round4Correct[1] + ' 题（第4关）</p>';
+html += '<div class="flex justify-center gap-3">';
+html += '<button onclick="restartGame()" class="bg-[#F2B84B] hover:bg-yellow-500 text-[#1F3A5F] font-bold px-8 py-3 rounded shadow transition-all hover:scale-105">再来一局</button>';
+html += '<button onclick="backToStart()" class="bg-white border-2 border-[#1F3A5F] text-[#1F3A5F] font-bold px-8 py-3 rounded shadow transition-all hover:scale-105">返回首页</button>';
+html += '</div>';
+panel.innerHTML = html;
+showOverlay();
+}
+
+function allOptionButtons() {
+return document.querySelectorAll("#options-grid .opt-btn, #l3-options .opt-btn, #options-p1 .opt-btn, #options-p2 .opt-btn");
+}
+
+function highlightBtn(btn, correct) {
+var buttons = allOptionButtons();
+buttons.forEach(function(b){ b.disabled = true; });
+if (!btn) return;
+if (correct) {
+btn.classList.remove("border-gray-200");
+btn.classList.add("border-[#4CAF7D]", "bg-green-50", "bounce-it");
+btn.innerHTML = '<span class="text-[#4CAF7D] font-bold mr-1">✓</span>' + btn.innerHTML;
+} else {
+btn.classList.remove("border-gray-200");
+btn.classList.add("border-[#D96C6C]", "bg-red-50", "shake-it");
+btn.innerHTML = '<span class="text-[#D96C6C] font-bold mr-1">✗</span>' + btn.innerHTML;
+}
+}
+
+function markCorrectOption(correctText) {
+var buttons = allOptionButtons();
+buttons.forEach(function(b){
+b.disabled = true;
+var txt = b.textContent.trim();
+var oc = b.getAttribute("onclick") || "";
+if (txt.indexOf(correctText) !== -1 || oc.indexOf(escAttr(correctText)) !== -1) {
+if (!b.classList.contains("border-[#D96C6C]")) {
+b.classList.remove("border-gray-200");
+b.classList.add("border-[#4CAF7D]", "bg-green-50");
+b.innerHTML = '<span class="text-[#4CAF7D] font-bold mr-1">✓</span>' + b.innerHTML;
+}
+}
+});
+}
+
+function disableOptions() {
+var buttons = allOptionButtons();
+buttons.forEach(function(b){ b.disabled = true; });
+}
+
+function showFeedbackRaw(msg, detail, bgColor) {
+var area = document.getElementById("feedback-area");
+area.style.backgroundColor = bgColor;
+var content = document.getElementById("feedback-content");
+var html = "";
+if (msg) html += '<p class="text-white font-bold text-base md:text-lg">' + msg + '</p>';
+if (detail) html += '<p class="text-white/90 text-sm mt-1">' + detail + '</p>';
+content.innerHTML = html;
+}
+
+function clearFeedback() {
+var area = document.getElementById("feedback-area");
+area.style.backgroundColor = "transparent";
+document.getElementById("feedback-content").innerHTML = "";
+document.getElementById("combo-float").innerHTML = "";
+}
+
+function showComboFloat(combo) {
+if (combo < 2) return;
+var el = document.getElementById("combo-float");
+var text = combo >= 3 ? "🔥 势不可挡！连击x" + combo : "⚡ 连续答对 " + combo + " 题！";
+el.innerHTML = '<div class="float-combo bg-[#F2B84B] text-[#1F3A5F] font-bold px-4 py-1.5 rounded-full text-sm shadow whitespace-nowrap">' + text + '</div>';
+setTimeout(function(){ el.innerHTML = ""; }, 1300);
+}
+
+function randomEncourage() {
+var msgs = ["太棒了！","完全正确！","真厉害！","继续保持！","非常好！"];
+return msgs[Math.floor(Math.random() * msgs.length)];
+}
+
+function randomWrongMsg() {
+var msgs = ["再想想哦～","差一点点！","不要灰心！","换个思路试试～"];
+return msgs[Math.floor(Math.random() * msgs.length)];
+}
+
+function startCountdown(seconds, onEnd) {
+stopTimer();
+state.timeLeft = seconds;
+setTimerText(state.timeLeft);
+state.timerInterval = setInterval(function(){
+state.timeLeft--;
+setTimerText(state.timeLeft);
+if (state.timeLeft <= 0) {
+stopTimer();
+if (onEnd) onEnd();
+}
+}, 1000);
+}
+
+function stopTimer() {
+if (state.timerInterval) {
+clearInterval(state.timerInterval);
+state.timerInterval = null;
+}
+}
+
+function showOverlay() {
+document.getElementById("overlay").classList.remove("hidden");
+}
+
+function hideOverlay() {
+document.getElementById("overlay").classList.add("hidden");
+}
+
+function escHtml(str) {
+var div = document.createElement("div");
+div.appendChild(document.createTextNode(str));
+return div.innerHTML;
+}
+
+function escAttr(str) {
+return str.replace(/\\/g, "\\\\").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+}
+</script>
+ </body>
+</html>
